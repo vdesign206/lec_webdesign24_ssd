@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+section:nth-child(odd) {
+    background-color: skyblue;
+}
+.wrapper {
+    padding-top: 88px;
+    max-width: 1200px;
+    margin: auto;
+}
+h1 {
+    color: rgb(30, 103, 187);
+    font-size: 48px;
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.btns {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.btns .container {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    background-color: rgb(205, 205, 205);
+    margin: auto;
+}
+.btns__menu {
+    display: flex;
+    justify-content: center;
+}
+.btns__menu .btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #193a40;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 4px;
+
+    background-color: #9ad2d9;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btns__menu .btn:hover {
+    background-color: white;
+    border: 1px solid #666;
+}
+

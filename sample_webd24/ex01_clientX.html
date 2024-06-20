@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  <div class="box"></div>
+  <p>마우스를 움직이면 아래에 위치 표시</p>
+  <p id="screen-log"></p>
+
+  <br /> <br />
+
+  <p>마우스를 클릭하며 아래에 위치 표시</p>
+  <p id="log"></p>
+
+  <script>
+    // 마우스 움직일 때 위치 표시
+    let screenLog = document.querySelector('#screen-log');
+    document.addEventListener('mousemove', logKey);
+    
+    function logKey(e) {
+      screenLog.innerText = `
+        Screen X/Y: ${e.screenX}, ${e.screenY}
+        Page X/Y: ${e.pageX}, ${e.pageY}
+        Client X/Y: ${e.clientX}, ${e.clientY}`;
+    }
+    
+    // 마우스 클릭하면 위치 표시 
+    let log = document.getElementById('log');
+    document.onclick = inputChange;
+    function inputChange(e) {
+      log.textContent = `Position: (${e.clientX}, ${e.clientY})`;
+    }
+
+</script>
+</body>
+</html>

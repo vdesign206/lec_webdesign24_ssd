@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+        }
+        section:nth-child(odd) { 
+            background-color: skyblue;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: 300px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightgrey;
+            margin: 10px;
+        }
+        .inline {
+            display: inline;
+        }
+        .inline-block {
+            display: inline-block;
+
+        }
+        .block {
+            display: block;
+        }
+        .box.inline-block {
+            line-height: 100px;
+            text-align: center;
+        }
+        .inline__container{
+            text-align: center;
+            line-height: 100px;
+        }
+        .inline-block__container{
+            text-align: center;
+        }
+        .block__container{
+            /* display: flex;
+            justify-content: center; */
+            text-align: center;
+        }
+        .flex__container {
+            display: flex;  
+        }
+        .inline__item {
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+
+        }
+        .inline-block__item {
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+        .block__item {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            line-height: 100px;
+            letter-spacing: -5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>
+                <span>인라인요소1</span>
+                <span>인라인요소2</span>
+                <span>인라인요소3</span>
+            </div>
+            <div>
+                <button>인라인블락요소1</button>
+                <button>인라인블락요소2</button>
+                <button>인라인블락요소3</button>
+            </div>
+            <div>
+                <h1>블락요소1</h1>
+                <h1>블락요소2</h1>
+                <h1>블락요소3</h1>
+            </div>
+            <div>
+                <span>인라인요소</span>
+                <button>인라인블락요소</button>
+                <h1>블락요소</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="inline__container">
+                <span class="inline__item">인라인요소1</span>
+                <span class="inline__item">인라인요소2</span>
+                <span class="inline__item">인라인요소3</span>
+            </div>
+            <div class="inline-block__container">
+                <button class="inline-block__item">인라인블락요소1</button>
+                <button class="inline-block__item">인라인블락요소2</button>
+                <button class="inline-block__item">인라인블락요소3</button>
+            </div>
+            <div class="block__container">
+                <h1 class="block__item">블락요소1</h1>
+                <h1 class="block__item">블락요소2</h1>
+                <h1 class="block__item">블락요소3</h1>
+                태그사이에 입력된 content는 인라인요소
+            </div>
+            <div class="flex__container">
+                <span>인라인요소1</span>
+                <button>인라인블락요소1</button>
+                <h1>블락요소1</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="inline-block">
+                <span>인라인요소1</span>
+                <span>인라인요소2</span>
+                <span>인라인요소3</span>
+                <button>버튼1</button>
+                <button>버튼2</button>
+                <button>버튼3</button>
+                <h1>텍스트1</h1>
+                <h1>텍스트2</h1>
+                <h1>텍스트3</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container flex__container">
+            <div class="flex__container">
+                <span>인라인요소1</span>
+                <span>인라인요소2</span>
+                <span>인라인요소3</span>
+                <button>버튼1</button>
+                <button>버튼2</button>
+                <button>버튼3</button>
+                <h1>텍스트1</h1>
+                <h1>텍스트2</h1>
+                <h1>텍스트3</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container flex__container">
+            <div class="flex__container">
+                <span>인라인요소1</span>
+                <span>인라인요소2</span>
+                <span>인라인요소3</span>
+                <button>버튼1</button>
+                <button>버튼2</button>
+                <button>버튼3</button>
+                <h1>텍스트1</h1>
+                <h1>텍스트2</h1>
+                <h1>텍스트3</h1>
+            </div>
+            <div class="flex__container">
+                <div class="box">빈박스</div>
+                <div class="box">빈박스</div>
+                <div class="box">빈박스</div>
+                <button class="box">버튼4</button>
+                <button class="box">버튼5</button>
+                <button class="box">버튼6</button>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+     <div class="circle"></div>
+     <header id="navigation">
+        <a href="#" class="logo">
+            <img src="" alt="">
+        </a>
+        <ul>
+            <li><a href="#">About Her</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Product</a></li>
+        </ul>
+     </header>
+     <div class="content">
+        <div class="textBox">
+            <h2>Welcome to<br>
+            <span>Paula Scher's</span> archive</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatibus, vel nobis expedita est inventore et dicta neque quos recusandae hic quibusdam ab illum? Voluptatibus voluptas aliquid provident. Laudantium, soluta!
+            </p>
+
+        </div>
+        <div class="imgBox">
+            <img src="./img/thedivaisdismissed.png" alt="img1" class="bigImage">
+        </div>
+     </div>
+     <ul class="thumb">
+        <li><img src="./img/thumbnail1.png" alt="" onclick="imgSlider('img/thedivaisdismissed.png');
+        changeCircleColor('#fadc1b')"></li>
+        <li><img src="./img/thumbnail2.png" alt="" onclick="imgSlider('img/noisefunk.png');
+        changeCircleColor('#2c3383')"></li>
+        <li><img src="./img/thumbnail3.png" alt="" onclick="imgSlider('img/him.png');
+        changeCircleColor('#8eb801')"></li>
+     </ul>
+     <ul class="sci">
+        <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+     </ul>
+   </section>
+   <script>
+    function imgSlider(anything) {
+        document.querySelector('.bigImage').src = anything;
+    }
+    function changeCircleColor(color) {
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+   </script>
+</body>
+</html>

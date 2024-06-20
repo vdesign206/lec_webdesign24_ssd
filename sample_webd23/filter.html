@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    width: 680px;
+    height: 200px;
+    display: flex;
+    background: repeating-linear-gradient(to top left, lightyellow, lightyellow 10px, skyblue 10px, skyblue 20px);
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: thistle;
+    margin: 10px;
+  }
+  .filter1 { filter: blur(10px);  }
+  .filter2 { filter: brightness(0.4);  }
+  .filter3 { filter: contrast(150%);  }
+  .filter4 { filter: drop-shadow(10px 10px 20px green);  }
+  .filter5 { filter: grayscale(150%);  }
+  .filter6 { filter: hue-rotate(180deg);  }
+  .filter7 { filter: invert(150%);  }
+  .filter8 { filter: opacity(50%);  }
+  .filter9 { filter: saturate(50%);  }
+  .filter10 { filter: sepia(150%);  }
+ 
+</style>
+<body>
+  <div class="container">
+    <div class="box filter1"></div>
+    <div class="box filter2"></div>
+    <div class="box filter3"></div>
+    <div class="box filter4"></div>
+    <div class="box filter5"></div>
+  </div>
+  <div class="container">
+    <div class="box filter6"></div>
+    <div class="box filter7"></div>
+    <div class="box filter8"></div>
+    <div class="box filter9"></div>
+    <div class="box filter10"></div>
+  </div>
+  
+</body>
+</html>

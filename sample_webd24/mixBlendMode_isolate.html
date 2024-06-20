@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{margin: 100px;}
+    .circle { 
+      width: 100px; height: 100px;  border-radius: 50%;
+      mix-blend-mode: screen; position: absolute; 
+    }
+    .circle2 { 
+      width: 100px; height: 100px;  border-radius: 50%;
+      mix-blend-mode: multiply; position: absolute; 
+    }
+    .circle-1 { background: red; left:50px;}
+    .circle-2 { background: lightgreen;  left: 100px; }
+    .circle-3 { background: blue; left: 75px; top: 50px; }
+    .circle-4 { background: yellow; left: 300px}
+    .circle-5 { background: cyan;  top: 50px; left: 325px; }
+    .circle-6 { background: magenta; left: 275px; top: 50px; }
+    .isolate { isolation: isolate; /* Without isolation, the background color will be taken into account */  position: relative; }
+  </style>
+</head>
+<body>
+  <div class="isolate">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
+  <div class="isolate">
+    <div class="circle2 circle-4"></div>
+    <div class="circle2 circle-5"></div>
+    <div class="circle2 circle-6"></div>
+  </div>
+</body>
+</html>
